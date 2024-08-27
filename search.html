@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</head>
+<body class="bg-blue-50 overflow-x-hidden">
+
+    <!-- Header Navigation Section -->
+    <header>
+        <nav class="bg-white shadow-lg fadeInTop">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div class="py-4 px-2 text-base font-regular primary-color">
+							<!-- Website Logo -->
+							
+							<button  type="button" id="asach"class="btn btn-info"><b>Cookstr😋</b></button>
+							<!--<a href="home.html"><button  type="button" id="asach"class="btn btn-info"><b>Cookstr😋</b></button></a>-->
+					
+						</div>
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+                        <a href="home.html" class="py-4 px-2 text-base font-regular primary-color">Home</a>
+						<a href="contact.html" class="py-4 px-2 text-base font-regular primary-color">Contact Us</a>
+						<!--<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a>-->
+						<a id="nav-login-btn" href="login.html" class="py-2 px-2 text-base font-regular primary-color">Log In</a>
+						<a id="nav-signup-btn" href="signup.html">
+						<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
+                            Sign Up
+                        </button>
+						</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-blue-600"
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li id="nav-profile-img-mobile"><a href="profile.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">Profile</a></li>
+					<li class="active"><a href="home.html" class="block text-sm px-2 py-4 text-white bg-blue-600 text-base font-regular">Home</a></li>
+					<li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300 text-base font-regular">Contact Us</a></li>
+					<li id="nav-login-btn-mobile"><a href="login.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">Log In</a></li>
+					<li id="nav-signup-btn-mobile"><a href="signup.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">Sign Up</a></li>
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+    </header>
+
+    
+	<section class="relative">
+		<div class="container mx-auto flex flex-col lg:flex-row items-center gap-12 mt-10">
+		  
+		  <div class="flex flex-1 flex-col items-center lg:items-start overflow-hidden">
+			<h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500 font-bold text-3xl md:text-4 lg:text-6xl text-center lg:text-center mb-2 py-2 slideUp">
+				Learn. Cook. Share.<br/>Cooking Made Easy.
+			</h2>
+			<div class="overflow-hidden">
+			<p class="font-thin text-xl md:text-3xl text-center lg:text-left slideUp">
+				Say good bye to long and frustrating
+			</p>
+			<p class="font-thin text-xl md:text-3xl text-center lg:text-left slideUp">
+				food blogs and recipe videos. Access </p>
+			<p class="font-thin text-xl md:text-3xl text-center lg:text-left slideUp">
+				our recipe cards to prepare any dish </p>
+			<p class="font-thin text-xl md:text-3xl text-center lg:text-left slideUp">
+				in minutes.</p>
+			</p>
+		    </div>
+			<div class="flex mx-auto md:mx-40 mt-6 justify-center flex-wrap gap-6">
+			  <a href="styles/browser1.html">
+			  <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-xl font-regular py-2 px-4 rounded transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 ...">
+				BEVERAGES >> 🍹
+			  </button>
+			</a>
+			</div>
+		  </div>
+		
+		  <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+			<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full fadeInRotate" src="image/2.jpg.jpg" alt="" />
+		  </div>
+		</div>
+		
+		<div
+		  class="
+			hidden
+			md:block
+			overflow-hidden
+			bg-bookmark-purple
+			rounded-l-full
+			absolute
+			h-80
+			w-2/4
+			top-32
+			right-0
+			lg:
+			-bottom-28
+			lg:-right-36
+		  "
+		></div>
+	  </section>
+    
+    
+    <main>
+		<section>
+			<label for="youtubever">srarch on youtube</label>
+			<input type="text" id="youtubever">
+		</section>
+      
+      <section class="relative md:m-10" id="section">
+        <div  class="font-medium text-2xl md:text-4xl text-center mb-6">Search Your Favorite Dish</div>
+          <div class="bg-white p-3 shadow-sm rounded-sm">
+          <!--Search bar-->
+          
+          <form id="search-form" class="border rounded overflow-hidden flex mb-4">
+            <input type="text" id="search-input" name="search-input"  class="w-11/12 px-4 py-2 border-gray-300 focus:ring-blue-600 font-regular" placeholder="What are you looking for?">
+            <button type="submit">Search</button>
+          </form>
+          </div>
+  
+          <!--Recent Posts-->
+         
+        </div>
+        </div>
+      </section>
+      <div id="loading-message">
+        <p>Loading...</p>
+      </div>
+      <div id="results"></div>
+    </main>
+    <script src="script.js"></script>
+	<script src="youtube.js"></script>
+  </body>
+</html>
